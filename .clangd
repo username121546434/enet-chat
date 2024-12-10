@@ -1,3 +1,3 @@
 CompileFlags:
   Add:
-    - -isystem=C:/Users/Atharv/Desktop/C++/Enet_tutorial/ext/include
+    - --include-directory=C:/Users/Atharv/Desktop/C++/Enet_tutorial/ext/include
