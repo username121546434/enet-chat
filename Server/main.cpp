@@ -32,9 +32,9 @@ int main(int argc, char **argv) {
                     break;
                 case ENET_EVENT_TYPE_RECEIVE:
                     std::cout << "A packet of length " << event.packet->dataLength
-                            << " containing " << event.packet->data << " "
+                            << " containing \"" << event.packet->data << "\" "
                             << "was received from " << event.peer->address.host << ':' << event.peer->address.port << " "
-                            << "from channel " << event.channelID;
+                            << "from channel " << event.channelID << std::endl;
                     break;
                 case ENET_EVENT_TYPE_DISCONNECT:
                     std::cout << event.peer->address.host << ':' << event.peer->address.port << " disconnected." << std::endl;
